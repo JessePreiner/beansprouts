@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="Coming soon!" />
         <p className="description">
-          Coming soon!
+          Check back again for updates!
         </p>
       </main>
 
