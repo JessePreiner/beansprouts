@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="Coming soon!" />
         <p className="description">
-          Check back again for updates!
+          Licensed childcare in Saskatoon.
         </p>
       </main>
 
