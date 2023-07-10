@@ -33,3 +33,16 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+    /* The image used */
+    background-image: url("../img/pexels-dc.jpg");
+
+    /* Full height */
+    height: 50%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

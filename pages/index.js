@@ -4,7 +4,9 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
+    // <div >
+      <div className="container">
+
       <Head>
         <title>Bean Sprouts Childcare Co-Op</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,7 +18,12 @@ export default function Home() {
           Licensed childcare in Saskatoon.
         </p>
       </main>
-
+      <div className='contact'>
+        <form>
+          <input type='text' placeholder='hello' />
+        </form>
+      </div>
+      {/* </div> */}
       <Footer />
     </div>
   )
