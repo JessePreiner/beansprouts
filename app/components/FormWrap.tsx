@@ -10,10 +10,10 @@ export default function FormWrap(): ReactNode {
         <GoogleReCaptchaProvider
             reCaptchaKey="6LemJCAnAAAAAOLl5WGLCBEJqgRXUPaS5xcvbTPh"
             scriptProps={{
-                // async: false,
-                // defer: false,
-                // appendTo: "head",
-                // nonce: undefined,
+                async: false,
+                defer: false,
+                appendTo: "head",
+                nonce: undefined,
             }}>
             <ContactForm />
         </GoogleReCaptchaProvider>)
