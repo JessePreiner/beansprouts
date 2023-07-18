@@ -38,7 +38,7 @@ function ContactForm() {
                             errors={state.errors}
                         />
                     </div>
-                    <Button onClick={handleSubmit} variant="outlined" disabled={state.submitting}>Submit</Button>
+                    <Button type="submit" onClick={handleSubmit} variant="outlined" disabled={state.submitting}>Submit</Button>
                 </form>
             </div>
         )
