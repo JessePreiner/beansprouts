@@ -6,12 +6,22 @@ import { Button, TextField } from '@mui/material';
 function ContactForm() {
     const [state, handleSubmit] = useForm("xpzgznpd");
 
+    const prepAndSubmitData = (e: any) => {
+        e.preventDefault()
+
+        const formData = {
+            name: e.target.name.value,
+            message: e.target.message.value,
+            email: e.target.email.value,
+        }
+        handleSubmit(formData)
+    }
     return state.succeeded
         ? <p>Thanks for getting in touch!</p>
         : (
             <div>
                 <p>Get in touch</p>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={prepAndSubmitData}>
                     <meta name="referrer" content="origin" />
                     <div>
                         <div>
@@ -38,7 +48,7 @@ function ContactForm() {
                             errors={state.errors}
                         />
                     </div>
-                    <Button type="submit" onClick={handleSubmit} variant="outlined" disabled={state.submitting}>Submit</Button>
+                    <Button type="submit" variant="outlined" disabled={state.submitting}>Submit</Button>
                 </form>
             </div>
         )
