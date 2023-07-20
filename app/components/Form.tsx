@@ -1,6 +1,7 @@
 "use client"
 import { useForm, ValidationError } from '@formspree/react';
 import { Button, TextField } from '@mui/material';
+import TextareaAutosize from '@mui/base/TextareaAutosize';
 
 
 function ContactForm() {
@@ -25,13 +26,13 @@ function ContactForm() {
                     <meta name="referrer" content="origin" />
                     <div>
                         <div>
-                            <TextField required id="name" label="Name" variant="filled" />
+                            <TextField required id="name" label="Name" />
                             <ValidationError
                                 prefix="Name"
                                 field="name"
                                 errors={state.errors}
                             />
-                            <TextField required id="email" type="email" label="Email" variant='filled' />
+                            <TextField required id="email" type="email" label="Email" />
                             <ValidationError
                                 prefix="Email"
                                 field="email"
@@ -41,7 +42,14 @@ function ContactForm() {
 
                         </div>
 
-                        <TextField required id="message" label="Message" variant='filled' />
+                        <TextareaAutosize
+                            required
+                            id="message"
+                            
+                            aria-label="minimum height"
+                            minRows={3}
+                            placeholder="Message"
+                        />
                         <ValidationError
                             prefix="Message"
                             field="message"
