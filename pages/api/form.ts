@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
 
   type RequestBody = {
     name:String;
@@ -24,11 +24,8 @@ export default async function handler(req, res) {
 
   try {
     const postResult = await fetch('https://formspree.io/f/xpzgznpd', params)
-    const postResultJson = await postResult.json()
-
-    console.log(JSON.stringify(postResultJson))
     res.status(200).json({ postResult, error: null })
-  } catch (error) {
+  } catch (error: any) {
     res.status(500).json({ postResult: null, error: error.message })
   }
 

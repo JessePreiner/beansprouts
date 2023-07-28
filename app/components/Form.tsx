@@ -1,8 +1,6 @@
 "use client"
 import { useForm, ValidationError } from '@formspree/react';
 import { Button, TextField } from '@mui/material';
-import TextareaAutosize from '@mui/base/TextareaAutosize';
-import EmptyTextarea from './inputs/StyledTextArea';
 import { CSSProperties } from 'react';
 
 
