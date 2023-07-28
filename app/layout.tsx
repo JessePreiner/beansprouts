@@ -3,7 +3,6 @@ import './globals.css'
 import theme from './theme'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { AppProps } from 'next/app'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,14 +11,11 @@ export const metadata: Metadata = {
   description: 'Licensed childcare in Saskatoon',
 }
 
-export interface MyProps extends AppProps {
-  children?: React.ReactNode,
-}
-
 export default function RootLayout({
-  children, Component, pageProps:PageProps
-}: MyProps
-) {
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <ThemeProvider theme={theme}>
       <html lang="en">
