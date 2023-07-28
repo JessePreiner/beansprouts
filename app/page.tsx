@@ -1,9 +1,8 @@
 
 import ContactForm from './components/Form';
-import FormWrap from './components/FormWrap';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
-
+import styles from './page.module.css'
 
 export default function Home() {
 
@@ -16,13 +15,11 @@ export default function Home() {
         </p>
       </main>
 
+      <div className={styles.formWrap}>
+      </div>
 
     </div>
-    <div className="form-container">
-      <ContactForm />
 
-    </div>
-
-<Footer />
+    <Footer />
   </>)
 }
