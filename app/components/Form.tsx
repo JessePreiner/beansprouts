@@ -34,8 +34,8 @@ function ContactForm() {
         ? <p style={{ textAlign: 'center' }}>Thanks for getting in touch!</p>
         : (
             <div>
-                <p style={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem' }}>Get in touch</p>
-                <form style={{ display: 'flex', flexDirection: 'column' }}
+                <p style={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem', color: 'white' }}>Get in touch</p>
+                <form style={{ display: 'flex', flexDirection: 'column', gap: '.25rem' }}
                     onSubmit={prepAndSubmitData}>
                     <meta name="referrer" content="origin" />
                     <TextField
@@ -60,7 +60,6 @@ function ContactForm() {
                         color='secondary'
                         InputProps={{ style: inputStyle }}
                         rows={2}
-                        maxRows={5}
                         multiline
                         required
                         id="message"
