@@ -1,9 +1,10 @@
 import styles from './Footer.module.css'
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
       <footer className={styles.footer}>
-        &copy; 2023 Bean Sprouts Childcare Co-Op
+        &copy; {year} Bean Sprouts Childcare Co-Op
       </footer>
   )
 }

@@ -47,5 +47,31 @@ code {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 1.5rem;
+  list-style: none;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #e8c8c89c;
+}
+.menuItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  touch-action: manipulation;
+  border: none;
+  outline: none;
+  margin-left:8px;
 }
